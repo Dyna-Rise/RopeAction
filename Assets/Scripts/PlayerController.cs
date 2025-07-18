@@ -262,7 +262,7 @@ public class PlayerController : MonoBehaviour
     public void ReleaseHang()
     {
         // ジョイント破棄
-        var joint = GetComponent<DistanceJoint2D>();
+        var joint = GetComponent<SpringJoint2D>(); //指定コンポーネント間違いを修正済み
         if (joint != null)
         {
             Destroy(joint);
