@@ -52,8 +52,8 @@ RopeHead - RopeHead.cs
 * PlayerControlsをダブルクリックして、次のようなアクション設定をする ※キーボードの設定もしておくこと  
 ![InputActionの作成](ReadmeImg/img5.png)  
 
-* PlayerController.csにて、自分で設定したInputActionの項目名と対応する入力処置を記述していく
-InputActionの設定を利用できるように下準備となる記述を加えておく  
+* PlayerController.csにて、自分で設定したInputActionの項目名と対応する入力処置を記述していく  
+InputActionの設定を利用できるように下準備となる記述を加えておく
 ```C#
 //名前空間の呼び出し
 using UnityEngine.InputSystem; //PackegeManagerからInputSystemパッケージの導入が必要
