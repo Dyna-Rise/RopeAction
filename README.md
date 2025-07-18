@@ -39,17 +39,17 @@ RopeHead - RopeHead.cs
 # ゲームコントローラーとキーボードの共生
 
 # ゲームコントローラーを受け入れするには「InputSystem」が必要 ※202507時点で最新のやり方
-* まずはPackegeManagerから必要な機能InputSystemをインストール
+* まずはPackegeManagerから必要な機能InputSystemをインストール  
 ![InputSystemインストール](ReadmeImg/img2.png)  
   
 * Edit＞ProjectSettings＞Playerの スタンドアロンか WebGLの項目にて 「Other Settings」の「Active Input Handing」を"Both"にしてInputSystemも有効にする  
 ※Editorの再起動が入るので注意  
 ![InputSystemを有効](ReadmeImg/img3.png)  
   
-* 「Scripts」フォルダ内で右クリック＞Create>InputActionで「InputActionAssetファイル」を生成し、"PlayerControls"という名前にし、インスペクターで「GenerateC＃Class」にチェックを入れておく
+* 「Scripts」フォルダ内で右クリック＞Create>InputActionで「InputActionAssetファイル」を生成し、"PlayerControls"という名前にし、インスペクターで「GenerateC＃Class」にチェックを入れておく  
 ![InputActionの作成](ReadmeImg/img4.png)  
   
-* PlayerControlsをダブルクリックして、次のようなアクション設定をする ※キーボードの設定もしておくこと
+* PlayerControlsをダブルクリックして、次のようなアクション設定をする ※キーボードの設定もしておくこと  
 ![InputActionの作成](ReadmeImg/img5.png)  
 
 * PlayerController.csにて、自分で設定したInputActionの項目名と対応する入力処置を記述していく
