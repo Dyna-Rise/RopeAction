@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour
     Animator anime;
 
     [Header("コントローラー設定")]    
-    public PlayerControls controls; // InputaAtions設定より自動生成されたクラスをアタッチ
+    public PlayerControls controls; // InputaAtions設定より自動生成されたクラス(PlayerControls.cs)をプロジェクトからアタッチ
     Vector2 moveInput;
     bool jumpPressed;
     bool ropeShootPressed;
@@ -104,7 +104,7 @@ public class PlayerController : MonoBehaviour
         UpdateRopeVisual(); //ロープ射出中に途中の縄部分（LineRenderer）を描画する
     }
 
-    // --- 入力値獲得のメソッド群 ---
+    // --- 入力検知用のメソッド群 ---
     float GetHorizontalInput() => moveInput.x; //移動入力値を取得
     bool IsJumpPressed() => jumpPressed; //ジャンプボタン値を取得
     bool IsRopeShootPressed() => ropeShootPressed; //ロープ射出ボタン値を取得
@@ -132,7 +132,7 @@ public class PlayerController : MonoBehaviour
     }
 
 
-    //ジャンプ
+    //ジャンプメソッド
     void HandleJump()
     {
         if (IsJumpPressed()) //ジャンプボタンの受付があれば
@@ -162,7 +162,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    //ロープ投げ
+    //ロープ投げメソッド
     void HandleRope()
     {
         //ロープボタンが押されて、ロープ投げ中でなければ
