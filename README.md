@@ -3,8 +3,8 @@
 ## Playerから射出される「ロープの先端」オブジェクトのプレハブを用意する
   
 [サンプルの構成]
-Player - PlayerController.cs
-　∟Empty（CreateEmpty）※地面判定用オブジェクト
+Player - PlayerController.cs  
+　∟Empty（CreateEmpty）※地面判定用オブジェクト  
   ∟RopeVisual（CreateEmpty）※ロープの先端とPlayerをつなぐ縄部分　- LineRendererコンポーネント(普段は非表示)
   
 (プレハブ）
