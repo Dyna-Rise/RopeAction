@@ -5,7 +5,7 @@
 [サンプルの構成]
 Player - PlayerController.cs  
 　∟Empty（CreateEmpty）※地面判定用オブジェクト  
-  ∟RopeVisual（CreateEmpty）※ロープの先端とPlayerをつなぐ縄部分　- LineRendererコンポーネント(普段は非表示)
+　∟RopeVisual（CreateEmpty）※ロープの先端とPlayerをつなぐ縄部分　- LineRendererコンポーネント(普段は非表示)
   
 (プレハブ）
 RopeHead - RopeHead.cs
